@@ -1,0 +1,629 @@
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.content-container {
+    flex: 1;
+    /* This ensures that the content container takes up all the available space, pushing the footer to the bottom */
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.about-container {
+    min-height: 100vh; /* Full height viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-container {
+    text-align: center;
+    margin: 0px 0;
+}
+
+.logo-container img {
+    max-width: 70px; /* Adjust based on your logo's size */
+    height: auto;
+}
+
+.slogan {
+    text-align: center;
+    font-size: 20px; /* Adjust based on your preference */
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333; /* Adjust color to fit your design */
+}
+
+header {
+   /*background-color: #333;*/
+    padding:  0;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    color: white;
+    flex-shrink: 0;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.main-background, .split-background, .left-half, .right-half {
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-background {
+    flex-grow: 1; /* Allows main background to grow and fill available space */
+    background-image: url('images/background_II.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.split-background {
+    display: flex;
+    width: 100%;
+    height: 100%; /* Takes full height of its container, adjusted by flex-grow */
+}
+
+
+.left-half, .right-half {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.left-half {
+    background: url('path-to-your-left-side-image.jpg') no-repeat center center / cover;
+}
+
+.right-half {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+}
+
+.right-content {
+    max-width: 70%; /* Or adjust to control the width of your text content */
+    text-align: center;
+    color: #fff; /* Ensures text visibility against the dark background */
+    padding: 20px; /* Adjust padding as needed */
+}
+
+
+.main-content {
+    position: absolute; /* Ensures content is on top of the background */
+    z-index: 2; /* Higher than the split background */
+    /* Your existing styles for main content */
+    padding: 20px;
+    width: 100%;
+    text-align: right;
+    color: #fff; /* Ensure text is visible on the background */
+}
+
+
+.about-section {
+    flex: 1; /* This will make the about-section fill the available space */
+    background-image: url('images/About_us_Background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align:justify
+    padding: 20px 40px;
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* This vertically centers the content in the about-section */
+ }
+.about-content {
+    padding: 20px; /* Adjust this value to increase/decrease padding */
+    max-width: 800px; /* Optional: Controls the maximum width of the content */
+    margin: auto; /* Centers the content if max-width is set */
+    /* Additional styling specific to the text content */
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    position: relative; /* Keep as 'relative' for natural document flow. */
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Aligns items to each end and center */
+    align-items: center;
+    text-align: center;
+    padding: 0 20px; /* Add horizontal padding */
+}
+
+.footer-section {
+    flex: 1; /* Gives each section equal space */
+    display: flex;
+    justify-content: center; /* Center content of each section */
+}
+
+
+
+.footer-section a {
+    color: white;
+    margin: 0 10px; /* Adjust spacing between icons if needed */
+    font-size: 24px; /* Adjust the size of the icons */
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #ddd; /* Lighten the icon color on hover */
+}
+
+.footer-copyright {
+    font-size: 0.8em; /* Adjust the font size as desired */
+    margin-top: 20px; /* Space above the copyright */
+    padding: 10px 0; /* Padding inside the bottom area */
+    text-align: center;
+}
+
+/* Additional responsive adjustments may be needed for mobile views */
+
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.login-container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Add to your existing style.css */
+.signup-text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup-text a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+
+
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff; /* Ensures text is visible on the background */
+}
+
+.form-container {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay for form */
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 20px; /* Space between title and form */
+}
+
+/* Rest of your CSS */
+
+/* styles.css */
+/* style.css */
+
+/* Styling for the "Meet the Team" section */
+/* style.css */
+
+/* Styling for the "Meet the Team" section */
+.meet-the-team-section {
+    background-image: url('meet-the-team-background.jpg'); /* Replace 'meet-the-team-background.jpg' with the actual path to your background image */
+    background-size: cover;
+    background-position: center;
+    padding: 45px 0; /* Adjust padding as needed */
+    text-align: center;
+    color: white; /* Text color for better visibility */
+}
+/* Target the h2 directly */
+.about-section > h2 {
+    padding-top: 45px; /* Increase the top padding */
+    margin-top: 0; /* Ensure there's no additional space from the top margin */
+    font-size: 40px;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+
+
+.meet-the-team-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Styling for the black box */
+.black-box {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 20px;
+}
+
+/* Styling for the team members */
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Change to space-around to evenly distribute the profiles */
+}
+
+.team-member {
+    flex-basis: calc(50% - 20px); /* Two members per row */
+    margin: 10px;
+}
+
+/* Styling for left and right sections within the black box */
+.left-section,
+.right-section {
+    flex: 1;
+}
+
+/* Styling for the graduate picture */
+.right-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styling for buttons */
+.btn {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+/* Styling for the additional section */
+.additional-section {
+    padding: 50px 0; /* Adjust padding as needed */
+    text-align: center;
+}
+
+.additional-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+
+.main-header, .main-footer {
+    background-color: #333; /* Semi-transparent black background */
+    color: #fff;
+    padding: 20px;
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust the alpha value for the desired darkness */
+    padding: 20px; /* Optional: Add padding to create space around the content */
+}
+
+.service-offerings-heading {
+    text-align: center;
+    color: #ffffff;
+    margin-top: -10px; /* Reduce top margin to move the heading higher */
+    margin-bottom: 30px; /* Increase bottom margin for more space */
+    font-size: 24px;
+}
+
+
+
+.block-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.sub-block {
+    position: relative;
+    flex: 1;
+    height: 200px; /* Adjust height as needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    margin-right: 10px; /* Adjust spacing between subdivisions */
+    border-radius: 10px; /* Rounded corners */
+    background-size: cover; /* Ensure the background image covers the entire block */
+    background-position: center; /* Center the background image */
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out; /* Transition effect for hover */
+    
+}
+
+
+.sub-block:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.block-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: white;
+    z-index: 1;
+    text-align: center;
+}
+
+
+.sub-block:hover .block-name {
+    opacity: 1; /* Show block-name on hover */
+}
+
+.sub-block:hover .block-description {
+    display: block;
+}
+
+.block-link {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+
+.block-button {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+    padding: 8px 0px; /* Adjust padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color 0.3s ease; /* Add transition for better visual feedback */
+    line-height: 1; /* Ensure the line height is normal to remove extra space */
+    font-weight: 799; /* Adjust font weight (500 is slightly bold) */
+    font-size: 15px; /* Adjust font size */
+}
+
+
+.block-button:hover {
+    background-color: rgba(0, 0, 0, 1); /* Darken the background color on hover */
+}
+
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease-in forwards; /* Apply the animation */
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* extra css files and properties */
+
+.overview-section {
+    display: flex;
+    margin: 20px 0;
+}
+
+.left-column, .right-column {
+    flex: 1; /* This will ensure that both columns take up equal width */
+    padding: 20px;
+}
+
+.left-column {
+    background-color: white; /* Sets the background color of the left column to white */
+}
+
+.right-column {
+    background-color: lightgrey; /* Sets the background color of the right column to light grey */
+    position: relative; /* This will be used for positioning the semi-transparent block */
+}
+
+.video-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* This creates a semi-transparent white block */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Additional styles to make it look nice for a video block */
+}
+
+.finale-section {
+    flex: 1;
+    background-image: url('images/finale_background.png');
+    background-size: cover;
+    background-position: center;
+    color: #846222;
+    text-align: center;
+    padding: 20px 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Changed from center to flex-start */
+}
+
+.finale-content {
+    padding: 20px; /* Adjust this value to increase/decrease padding */
+    max-width: 1200px; /* Optional: Controls the maximum width of the content */
+    margin: auto; /* Centers the content if max-width is set */
+    /* Additional styling specific to the text content */
+}
+
+.Trans-container {
+    text-align: center;
+    position: relative;
+    top: -20px; /* Move text higher; adjust as needed */
+    padding-top: 0; /* Adjust based on your design needs */
+}
+
+.Trans-heading {
+    opacity: 0;
+    transition: opacity 0.5s;
+    font-size: 58px;
+    font-weight: bold;
+    position: absolute;
+    width: 100%;
+}
+.visible {
+    opacity: 1;
+}
+
+/* Style for the copyright notice */
+.copyright-notice {
+    text-align: center; /* Centers the text */
+    padding: 10px 0; /* Adds padding above and below the text */
+    font-size: 12px; /* Adjust the font size as needed */
+    color: #ffffff; /* Sets the text color; choose a color that fits your design */
+}
+
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+  
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+.form-container textarea:focus {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #ddd;
+    outline: none;
+    resize: none;
+    min-height: 200px;
+  }
+  
+.form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
