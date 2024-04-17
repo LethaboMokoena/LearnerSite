@@ -110,48 +110,6 @@
 
 //Modal related script
 
-"use strict";
-
-// Selectors
-const showModalBtns = document.querySelectorAll(".open-modal");
-const closeModalBtn = document.querySelector(".close-modal");
-const overlay = document.querySelector(".overlay");
-const modal = document.querySelector(".modal");
-const startButton = document.getElementById("startButton"); // The Start button
-
-// Function to show modal
-const showModal = () => {
-    modal.classList.remove("hidden");
-    overlay.classList.remove("hidden");
-};
-
-// Add event listeners to modal buttons
-for (let btn of showModalBtns) {
-    btn.addEventListener("click", showModal);
-}
-
-// Add event listener to the Start button
-startButton.addEventListener("click", showModal);
-
-// Function to hide modal
-const closeModal = () => {
-    modal.classList.add("hidden");
-    overlay.classList.add("hidden");
-};
-
-// Close modal actions
-closeModalBtn.addEventListener("click", closeModal);
-overlay.addEventListener("click", closeModal);
-
-// Keyboard event to close modal
-document.addEventListener("keydown", function (event) {
-    if (event.key === "Escape" && !modal.classList.contains("hidden")) {
-        closeModal();
-    }
-});
-
-
-
 
 
 
