@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Congratulations!</title>
+    <link rel="stylesheet" href="./app.css" />
+    <link rel="icon" type="image/jpg" href="./assets/Congo.jpg">
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="end" class="flex-center flex-column">
+        <h1 id="finalScore"></h1>
+        <form>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="username"
+          />
+          <button
+            type="submit"
+            class="btn"
+            id="saveScoreBtn"
+            onclick="saveHighScore(event)"
+            disabled
+          >
+            Save
+          </button>
+        </form>
+        <a class="btn" href="./game.html">Play Again</a>
+        <a class="btn" href="./">Go Home</a>
+        <form method="POST">
+          <button id="myButton" type="button">Click to Return</button>
+      </form>
+      
+      <script>
+          document.getElementById('myButton').addEventListener('click', function(event) {
+              event.preventDefault(); // Prevents form submission and page refresh
+      
+              // Open a new tab or switch to an existing one
+              let otherTab = window.open('https://www.example.com', '_blank');
+      
+              // Check if the new tab was successfully opened
+              if (otherTab) {
+                  // Close the current tab
+                  window.close();
+              } else {
+                  // Handle the case where the new tab couldn't be opened (e.g., pop-up blocked)
+                  alert('Unable to open a new tab. Please check your browser settings.');
+              }
+          });
+      </script>
+      
+      </div>
+    </div>
+    <script src="./end.js"></script>
+  </body>
+</html>
