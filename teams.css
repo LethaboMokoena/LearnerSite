@@ -1,0 +1,125 @@
+* {
+    font-family: Nunito, sans-serif;
+}
+
+.text-blk {
+    line-height: 25px;
+    margin: 0;
+}
+
+.responsive-container-block {
+    min-height: 75px;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: flex-start;
+}
+
+.inner-container {
+    max-width: 1320px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 80px auto 50px auto;
+}
+
+.section-head-text {
+    font-size: px;
+    line-height: 60px;
+    font-weight: 700;
+    margin: 0 0 18px 0;
+}
+
+.section-subhead-text {
+    color: rgb(72, 72, 72);
+    font-size: 20px;
+    line-height: 27px;
+    max-width: 670px;
+    margin: 0 0 80px 0;
+}
+
+.card {
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 25px 40px 25px;
+    box-shadow: rgba(255, 255, 255, 0.16) 0px 6px 24px;
+    border-radius: 6px;
+    background-color: rgba(96, 96, 96, 0.0);
+}
+
+.img-wrapper {
+    width: 175px;
+    height: 175px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 28px 0 5px 0;
+    line-height: 27px;
+}
+
+.position {
+    line-height: 26px;
+    color: rgb(166, 0, 130);
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+.testimonial {
+    color: rgb(122, 122, 122);
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.outer-container {
+    background-image: url('/Images/About_us_Background.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    padding: 0;
+}
+
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.team-member {
+    display: flex;
+    align-items: flex-start; /* Align items to the start */
+    padding: 10px; /* Optional padding for better spacing */
+}
+
+.profile-picture {
+    margin-right: 20px; /* Space between image and content */
+    position: relative; /* Position relative to adjust top and bottom */
+    top: 30px; /* Move the image up by 10px */
+    /* or alternatively, use margin-top to move it up or down */
+    /* margin-top: -10px; */
+}
+
+.content {
+    flex: 1; /* Allow the content to take up the remaining space */
+}
+
+
+
+@media (max-width: 1024px) {
+    .team-member {
+        flex: 1 1 calc(50% - 40px);
+    }
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        flex: 1 1 calc(100% - 40px);
+    }
+}

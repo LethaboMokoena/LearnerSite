@@ -380,7 +380,7 @@
 
 .category .content:hover {
     background-color: var(--primary);
-    color: #fff;
+    color: #471010;
 }
 
 .category .content h5 a {
@@ -410,90 +410,6 @@
 }
 
 
-/*** Team ***/
-.team-item img {
-    transition: .5s;
-}
-
-.team-item:hover img {
-    transform: scale(1.1);
-}
-
-
-/*** Testimonial ***/
-.testimonial-carousel::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-    z-index: 1;
-}
-
-.testimonial-carousel::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-    z-index: 1;
-}
-
-@media (min-width: 768px) {
-
-    .testimonial-carousel::before,
-    .testimonial-carousel::after {
-        width: 200px;
-    }
-}
-
-@media (min-width: 992px) {
-
-    .testimonial-carousel::before,
-    .testimonial-carousel::after {
-        width: 300px;
-    }
-}
-
-.testimonial-carousel .owl-item .testimonial-text,
-.testimonial-carousel .owl-item.center .testimonial-text * {
-    transition: .5s;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-text {
-    background: var(--primary) !important;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-text * {
-    color: #FFFFFF !important;
-}
-
-.testimonial-carousel .owl-dots {
-    margin-top: 24px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-.testimonial-carousel .owl-dot {
-    position: relative;
-    display: inline-block;
-    margin: 0 5px;
-    width: 15px;
-    height: 15px;
-    border: 1px solid #CCCCCC;
-    transition: .5s;
-}
-
-.testimonial-carousel .owl-dot.active {
-    background: var(--primary);
-    border-color: var(--primary);
-}
-
 
 /*** Footer ***/
 .footer .btn.btn-social {
@@ -516,7 +432,7 @@
 
 .footer .btn.btn-link {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 54px;
     padding: 0;
     text-align: left;
     color: #FFFFFF;
@@ -550,8 +466,8 @@
 }
 
 .footer .footer-menu a {
-    margin-right: 15px;
-    padding-right: 15px;
+    margin-right: 0px;
+    padding-right: 0px;
     border-right: 1px solid rgba(255, 255, 255, .1);
 }
 
@@ -561,4 +477,61 @@
     border-right: none;
 }
 
+
 /* Related to Modal window*/
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.custom-footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 10%;
+}
+
+.custom-footer-section {
+    margin: 10px 0;
+}
+
+.custom-footer-icons {
+    flex: 1;
+    text-align: left;
+}
+
+.custom-footer-contact {
+    flex: 1;
+    text-align: center;
+}
+
+.custom-footer-location {
+    flex: 1;
+    text-align: right;
+}
+
+.custom-footer-section a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.custom-footer-section a:hover {
+    color: #ddd;
+}
+
+.custom-footer-section i {
+    font-size: 1.5em;
+}
+
+.custom-footer-section p {
+    margin: 0;
+}
+
+.custom-copyright-notice {
+    margin-top: 20px;
+}

@@ -43,7 +43,7 @@
 </head>
 
 
-<body>
+<body class="fade-in">
 
 <div class="about-container">
     <div class="logo-container">
@@ -66,7 +66,7 @@
     </header>
     
     
-    <main class="main-background fade-in">
+    <main class="main-background">
         <div class="split-background">
             <div class="left-half">
                 <!-- If you have specific content for the left half, it goes here -->
@@ -106,20 +106,6 @@
         </div>
     </footer>
 </div>
-
-    <button class="open-button" onclick="openForm()">Chat</button>
-
-    <div class="chat-popup" id="myForm">
-    <form action="/action_page.php" class="form-container">
-        <h1>Chat</h1>
-
-        <label for="msg"><b>Message</b></label>
-        <textarea placeholder="Type message.." name="msg" required></textarea>
-
-        <button type="submit" class="btn">Send</button>
-        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-    </form>
-    </div>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

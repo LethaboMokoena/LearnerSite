@@ -10,7 +10,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/icon.png" rel="icon">
+    <link href="img/Images/logo_m_10.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,14 +32,28 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="teams.css">
+
+    
     <style>
         /* Targeting links within nav */
         nav a:hover {
             color: #800080; /* Color change on hover */
         }
+
+
     </style>
 </head>
-<body>
+<body class="fade-in">
+
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
 
 <div class="about-container">
     <div class="logo-container">
@@ -64,170 +78,261 @@
         </nav>
     </header>
     
-    <main class="about-section fade-in">
-        <h2>Meet the Team</h2>
-        <section class="meet-the-team-section">
-            <div class="meet-the-team-content">
-                
-                
-                <!-- Semi-transparent sections -->
-                <div class="team-members">
-    <!-- John Doe's profile -->
-    <div class="team-member">
-        <div class="black-box">
-            <div class="left-section">
-                <h3 style="color: white;">John Doe</h3>
-                <button class="btn btn-light btn  rounded-pill custom-button">Read More</button>
-                <button class="btn btn-light btn rounded-pill custom-button">Watch</button>
+    <title style="color: #800080;">Meet the team</title>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="team-member d-flex align-items-start border-bottom pb-3 wow fadeInUp" data-wow-delay="0.1s">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/aw43.png" alt="Barack Obama" class="rounded-circle mr-3 profile-picture" width="100" height="100">
+                <div class="content">
+                    <h3 class="name">Remone Adams</h3>
+                    <p class="position">Accounts Payable Learner</p>
+                    <h6 style="color: rgb(7, 7, 7);">Department:</h6>
+                    <p>Solutions Accounts Payable Department</p>
+
+                    <h6 class="path">Current Academic Path: </h6>
+                    <p>I’m currently studying a Bachelors of Commerce in Business Management and Marketing and am in my 2nd year. Upon completion of my degree, I intend to do my Honours in Financial Management. My time at +OneX thus far has influenced my choice as I was previously indecisive.  
+                    </p>
+                    <h6>Fun Fact:</h6>
+                    <p>I’m yet to lose a game of 30 secs (I’m THAT competitive lol!) </p>
+                    <div class="social-icons d-flex gap-2">
+                        <a href="http://www.twitter.com/" target="_blank">
+                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg" alt="Twitter" width="24" height="24">
+                        </a>
+                        <a href="http://www.facebook.com/" target="_blank">
+                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg" alt="Facebook" width="24" height="24">
+                        </a>
+                        <a href="http://www.instagram.com/" target="_blank">
+                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg" alt="Instagram" width="24" height="24">
+                        </a>
+                        <a href="http://www.gmail.com/" target="_blank">
+                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg" alt="Mail" width="24" height="24">
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="right-section">
-                <img src="Images/pro_pic.png" alt="John Doe Picture">
+        </div>
+        <div class="col-lg-6">
+            <div class="team-member d-flex align-items-start border-bottom pb-3 wow fadeInUp" data-wow-delay="0.2s">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/aw43.png" alt="Barack Obama" class="rounded-circle mr-3 profile-picture" width="100" height="100">
+                <div class="content">
+                    <h3 class="name">Sopapaza Thulani</h3>
+                    <p class="position">President & Commander-in-chief</p>
+                    <h6 style="color: rgb(7, 7, 7);">Department:</h6>
+                    <p>Solutions Accounts Payable Department</p>
+
+                    <h6 class="path">Current Academic Path: </h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                        Ut enim ad minim veniam, quis nostrud exercitation 
+                    </p>
+                    <h6>Fun Fact:</h6>
+                    <p>Duis aute irure dolor in reprehenderit</p>
+                    <div class="social-icons d-flex gap-2">
+                        <a href="http://www.twitter.com/" target="_blank">
+                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg" alt="Twitter" width="24" height="24">
+                        </a>
+                        <a href="http://www.facebook.com/" target="_blank">
+                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg" alt="Facebook" width="24" height="24">
+                        </a>
+                        <a href="http://www.instagram.com/" target="_blank">
+                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg" alt="Instagram" width="24" height="24">
+                        </a>
+                        <a href="http://www.gmail.com/" target="_blank">
+                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg" alt="Mail" width="24" height="24">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-<!-- Sue's profile -->
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="team-member d-flex align-items-start border-bottom pb-3 wow fadeInUp" data-wow-delay="1s">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/aw43.png" alt="Barack Obama" class="rounded-circle mr-3 profile-picture" width="100" height="100">
+                <div class="content">
+                    <h3 class="name">Mokoena Lethabo</h3>
+                    <p class="position">President & Commander-in-chief</p>
+                    <h6 style="color: rgb(7, 7, 7);">Department:</h6>
+                    <p>Solutions Accounts Payable Department</p>
 
-                    <div class="team-member">
-                        <div class="black-box">
-                            <div class="left-section">
-                                <h3 style="color: white;">Sue Smith</h3>
-                                <button class="btn btn-light btn  rounded-pill custom-button">Read More</button>
-                                <button class="btn btn-light btn rounded-pill custom-button">Watch</button>
-                            </div>
-                            <div class="right-section">
-                                <img src="Images/pro_pic.png" alt="Sue Smith Picture">
-                            </div>
-                        </div>
+                    <h6 class="path">Current Academic Path: </h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                    <h6>Fun Fact:</h6>
+                    <p>Duis aute irure dolor in reprehenderit </p>
+                    <div class="social-icons d-flex gap-2">
+                        <a href="http://www.twitter.com/" target="_blank">
+                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg" alt="Twitter" width="24" height="24">
+                        </a>
+                        <a href="http://www.facebook.com/" target="_blank">
+                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg" alt="Facebook" width="24" height="24">
+                        </a>
+                        <a href="http://www.instagram.com/" target="_blank">
+                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg" alt="Instagram" width="24" height="24">
+                        </a>
+                        <a href="http://www.gmail.com/" target="_blank">
+                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg" alt="Mail" width="24" height="24">
+                        </a>
                     </div>
-                    <!-- Repeat for additional team members -->
-                    <div class="team-members">
-                        <!-- John Doe's profile -->
-                        <div class="team-member">
-                            <div class="black-box">
-                                <div class="left-section">
-                                    <h3 style="color: white;">John Doe</h3>
-                                    <button class="btn btn-light btn  rounded-pill custom-button">Read More</button>
-                                    <button class="btn btn-light btn rounded-pill custom-button">Watch</button>
-                                </div>
-                                <div class="right-section">
-                                    <img src="Images/pro_pic.png" alt="John Doe Picture">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Sue's profile -->
-                        <div class="team-member">
-                            <div class="black-box">
-                                <div class="left-section">
-                                    <h3 style="color: white;">Sue Smith</h3>
-                                    <button class="btn btn-light btn  rounded-pill custom-button">Read More</button>
-                                    <button class="btn btn-light btn rounded-pill custom-button">Watch</button>
-                                </div>
-                                <div class="right-section">
-                                    <img src="Images/pro_pic.png" alt="Sue Smith Picture">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="team-members">
-                            <!-- John Doe's profile -->
-                            <div class="team-member">
-                                <div class="black-box">
-                                    <div class="left-section">
-                                        <h3 style="color: white;">John Doe</h3>
-                                        <button class="btn btn-light btn  rounded-pill custom-button">Read More</button>
-                                        <button class="btn btn-light btn rounded-pill custom-button">Watch</button>
-                                    </div>
-                                    <div class="right-section">
-                                        <img src="Images/pro_pic.png" alt="John Doe Picture">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Sue's profile -->
-                            <div class="team-member">
-                                <div class="black-box">
-                                    <div class="left-section">
-                                        <h3 style="color: white;">Sue Smith</h3>
-                                        <button class="btn btn-light btn  rounded-pill custom-button">Read More</button>
-                                        <button class="btn btn-light btn rounded-pill custom-button">Watch</button>
-                                    </div>
-                                    <div class="right-section">
-                                        <img src="Images/pro_pic.jpg" alt="Sue Smith Picture">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="team-members">
-                                <!-- John Doe's profile -->
-                                <div class="team-member">
-                                    <div class="black-box">
-                                        <div class="left-section">
-                                            <h3 style="color: white;">John Doe</h3>
-                                            <button class="btn btn-light btn  rounded-pill custom-button">Read More</button>
-                                            <!-- Button trigger modal -->
-                                            <button type="button" class="btn btn-light btn rounded-pill custom-button" data-toggle="modal" data-target="#videoModal">
-                                                Watch 
-                                            </button>
-                                            
-                                            <!-- Modal -->
-                                            <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                    <h5 class="modal-title" id="videoModalLabel">Video Title</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                    <!-- YouTube Video Embed -->
-                                                    <div class="embed-responsive embed-responsive-16by9">
-                                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
-                                                    </div>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                    </div>
-                                                </div>
-                                                </div>
-                                            </div>
-  
-                                        </div>
-                                        <div class="right-section">
-                                            <img src="Images/pro_pic.png" alt="John Doe Picture">
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Sue's profile -->
-                                <div class="team-member">
-                                    <div class="black-box">
-                                        <div class="left-section">
-                                            <h3 style="color: white;">Sue Smith</h3>
-                                            <button class="btn btn-light btn  rounded-pill custom-button">Read More</button>
-                                            <button class="btn btn-light btn rounded-pill custom-button">Watch</button>
-                                        </div>
-                                        <div class="right-section">
-                                            <img src="Images/pro_pic.png" alt="Sue Smith Picture">
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                    </div>
-                        </div>
-                    </div>        
-
-                                
                 </div>
             </div>
-        </section>
-    
+        </div>
+        <div class="col-lg-6">
+            <div class="team-member d-flex align-items-start border-bottom pb-3 wow fadeInUp" data-wow-delay="1.2s">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/aw43.png" alt="Barack Obama" class="rounded-circle mr-3 profile-picture" width="100" height="100">
+                <div class="content">
+                    <h3 class="name">Michell Hlabathe</h3>
+                    <p class="position">President & Commander-in-chief</p>
+                    <h6 style="color: rgb(7, 7, 7);">Department:</h6>
+                    <p>Solutions Accounts Payable Department</p>
 
-    </main>
+                    <h6 class="path">Current Academic Path: </h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                    <h6>Fun Fact:</h6>
+                    <p>Duis aute irure dolor in reprehenderit</p>
+                    <div class="social-icons d-flex gap-2">
+                        <a href="http://www.twitter.com/" target="_blank">
+                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg" alt="Twitter" width="24" height="24">
+                        </a>
+                        <a href="http://www.facebook.com/" target="_blank">
+                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg" alt="Facebook" width="24" height="24">
+                        </a>
+                        <a href="http://www.instagram.com/" target="_blank">
+                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg" alt="Instagram" width="24" height="24">
+                        </a>
+                        <a href="http://www.gmail.com/" target="_blank">
+                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg" alt="Mail" width="24" height="24">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="team-member d-flex align-items-start border-bottom pb-3 wow fadeInUp" data-wow-delay="0.1s">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/aw43.png" alt="Barack Obama" class="rounded-circle mr-3 profile-picture" width="100" height="100">
+                <div class="content">
+                    <h3 class="name">Thanyani Rotshidzwa</h3>
+                    <p class="position">President & Commander-in-chief</p>
+                    <h6 style="color: rgb(7, 7, 7);">Department:</h6>
+                    <p>Solutions Accounts Payable Department</p>
+
+                    <h6 class="path">Current Academic Path: </h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                    <h6>Fun Fact:</h6>
+                    <p>Duis aute irure dolor in reprehenderit</p>
+                    <div class="social-icons d-flex gap-2">
+                        <a href="http://www.twitter.com/" target="_blank">
+                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg" alt="Twitter" width="24" height="24">
+                        </a>
+                        <a href="http://www.facebook.com/" target="_blank">
+                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg" alt="Facebook" width="24" height="24">
+                        </a>
+                        <a href="http://www.instagram.com/" target="_blank">
+                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg" alt="Instagram" width="24" height="24">
+                        </a>
+                        <a href="http://www.gmail.com/" target="_blank">
+                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg" alt="Mail" width="24" height="24">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="team-member d-flex align-items-start border-bottom pb-3 wow fadeInUp" data-wow-delay="0.2s">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/aw43.png" alt="Barack Obama" class="rounded-circle mr-3 profile-picture" width="100" height="100">
+                <div class="content">
+                    <h3 class="name">Mhlanga Natasha</h3>
+                    <p class="position">President & Commander-in-chief</p>
+                    <h6 style="color: rgb(7, 7, 7);">Department:</h6>
+                    <p>Solutions Accounts Payable Department</p>
+
+                    <h6 class="path">Current Academic Path: </h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                    <h6>Fun Fact:</h6>
+                    <p>Duis aute irure dolor in reprehenderit</p>
+                    <div class="social-icons d-flex gap-2">
+                        <a href="http://www.twitter.com/" target="_blank">
+                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg" alt="Twitter" width="24" height="24">
+                        </a>
+                        <a href="http://www.facebook.com/" target="_blank">
+                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg" alt="Facebook" width="24" height="24">
+                        </a>
+                        <a href="http://www.instagram.com/" target="_blank">
+                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg" alt="Instagram" width="24" height="24">
+                        </a>
+                        <a href="http://www.gmail.com/" target="_blank">
+                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg" alt="Mail" width="24" height="24">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="team-member d-flex align-items-start border-bottom pb-3 wow fadeInUp" data-wow-delay="0.1s">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/aw43.png" alt="Barack Obama" class="rounded-circle mr-3 profile-picture" width="100" height="100">
+                <div class="content">
+                    <h3 class="name">Nqatsha Thabo</h3>
+                    <p class="position">President & Commander-in-chief</p>
+                    <h6 style="color: rgb(7, 7, 7);">Department:</h6>
+                    <p>Solutions Accounts Payable Department</p>
+
+                    <h6 class="path">Current Academic Path: </h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                    <h6>Fun Fact:</h6>
+                    <p>Duis aute irure dolor in reprehenderit</p>
+                    <div class="social-icons d-flex gap-2">
+                        <a href="http://www.twitter.com/" target="_blank">
+                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg" alt="Twitter" width="24" height="24">
+                        </a>
+                        <a href="http://www.facebook.com/" target="_blank">
+                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg" alt="Facebook" width="24" height="24">
+                        </a>
+                        <a href="http://www.instagram.com/" target="_blank">
+                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg" alt="Instagram" width="24" height="24">
+                        </a>
+                        <a href="http://www.gmail.com/" target="_blank">
+                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg" alt="Mail" width="24" height="24">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="team-member d-flex align-items-start border-bottom pb-3 wow fadeInUp" data-wow-delay="0.2s">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/aw43.png" alt="Barack Obama" class="rounded-circle mr-3 profile-picture" width="100" height="100">
+                <div class="content">
+                    <h3 class="name">Kara Tristan</h3>
+                    <p class="position">President & Commander-in-chief</p>
+                    <h6 style="color: rgb(7, 7, 7);">Department:</h6>
+                    <p>Solutions Accounts Payable Department</p>
+
+                    <h6 class="path">Current Academic Path: </h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                    <h6>Fun Fact:</h6>
+                    <p>Duis aute irure dolor in reprehenderit</p>
+                    <div class="social-icons d-flex gap-2">
+                        <a href="http://www.twitter.com/" target="_blank">
+                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg" alt="Twitter" width="24" height="24">
+                        </a>
+                        <a href="http://www.facebook.com/" target="_blank">
+                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg" alt="Facebook" width="24" height="24">
+                        </a>
+                        <a href="http://www.instagram.com/" target="_blank">
+                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg" alt="Instagram" width="24" height="24">
+                        </a>
+                        <a href="http://www.gmail.com/" target="_blank">
+                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg" alt="Mail" width="24" height="24">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
     
-    
-    
-    
-   
-    <footer>
+       <footer>
         <div class="footer-content">
             <div class="footer-section">
                 <!-- Social Icons -->
@@ -252,9 +357,17 @@
     
     
 </div>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
