@@ -18,14 +18,6 @@ let questions = [
         choice2: "Ans 2",
         choice3: "Ans 3",
         choice4: "Ans  4",
-        answer: 3,
-    },
-    {
-        question: "Example question?",
-        choice1: "Ans 1",
-        choice2: "Ans 2",
-        choice3: "Ans 3",
-        choice4: "Ans  4",
         answer: 1,
     },
     {
@@ -34,7 +26,15 @@ let questions = [
         choice2: "Ans 2",
         choice3: "Ans 3",
         choice4: "Ans  4",
-        answer: 4,
+        answer: 2,
+    },
+    {
+        question: "Example question?",
+        choice1: "Ans 1",
+        choice2: "Ans 2",
+        choice3: "Ans 3",
+        choice4: "Ans  4",
+        answer: 3,
     },
     {
         question: "Example question?",
@@ -50,7 +50,7 @@ let questions = [
         choice2: "Ans 2",
         choice3: "Ans 3",
         choice4: "Ans  4",
-        answer: 4,
+        answer: 5,
     },
     // Add more questions as needed
 ];
