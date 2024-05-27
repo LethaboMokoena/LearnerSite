@@ -88,13 +88,13 @@ h3 {
   border: 0.1rem solid #56a5eb;
   margin-bottom: 1rem;
   text-decoration: none;
-  color: #56a5eb;
+  color: #af0796;
   background-color: white;
 }
 
 .btn:hover {
   cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(157, 39, 122, 0.5);
   transform: translateY(-0.1rem);
   transition: transform 150ms;
 }
