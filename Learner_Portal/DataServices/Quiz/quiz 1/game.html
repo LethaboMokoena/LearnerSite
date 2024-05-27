@@ -4,52 +4,191 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Quizzify - Play</title>
+    <title>Data Science Quiz</title>
     <link rel="stylesheet" href="./app.css" />
     <link rel="stylesheet" href="./game.css" />
     <link rel="icon" type="image/jpg" href="./assets/play.jpg">
   </head>
   <body>
-    <div class="container">
-      <div id="loader"></div>
-      <div id="game" class="justify-center flex-column hidden">
-        <div id="hud">
-          <div id="hud-item">
-            <p id="progressText" class="hud-prefix">
-              Question
-            </p>
-            <div id="progressBar">
-              <div id="progressBarFull"></div>
-            </div>
-          </div>
-          <div id="hud-item">
-            <p class="hud-prefix">
-              Score
-            </p>
-            <h1 class="hud-main-text" id="score">
-              0
-            </h1>
-          </div>
-        </div>
-        <h2 id="question"></h2>
-        <div class="choice-container">
-          <p class="choice-prefix">A</p>
-          <p class="choice-text" data-number="1"></p>
-        </div>
-        <div class="choice-container">
-          <p class="choice-prefix">B</p>
-          <p class="choice-text" data-number="2"></p>
-        </div>
-        <div class="choice-container">
-          <p class="choice-prefix">C</p>
-          <p class="choice-text" data-number="3"></p>
-        </div>
-        <div class="choice-container">
-          <p class="choice-prefix">D</p>
-          <p class="choice-text" data-number="4"></p>
-        </div>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+      <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+        <span class="sr-only">Loading...</span>
       </div>
     </div>
-    <script src="./game.js"></script>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+      <a href="../../index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <p class="m-0 fw-bold" style="font-size: 25px;">
+          <img src="./assets/play.jpg" alt="" height="50px">
+          Graduate<span style="color: #9b0368;">Portal</span>
+        </p>
+      </a>
+      <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+          <a href="../../index.html" class="nav-item nav-link active">Home</a>
+          <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Data Solutions</a>
+            <div class="dropdown-menu fade-down m-0">
+              <a href="datascience.html" class="dropdown-item">Data Science</a>
+              <a href="Analytics.html" class="dropdown-item">Data Analytics</a>
+              <a href="Architecture.html" class="dropdown-item">Data Architecture & Engineering</a>
+            </div>
+          </div>
+          <a href="../../services.html" class="nav-item nav-link">Service Offerings</a>
+          <a href="#" class="nav-item nav-link">Resources</a>
+          <a href="#" class="nav-item nav-link">FAQ</a>
+          <a href="#" class="nav-item nav-link"><i class="fa fa-user"></i></a>
+          <a href="#" class="nav-item nav-link">
+            <div id="google_translate_element"></div>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <div class="container">
+      <div id="quiz-home" class="justify-center flex-column">
+        <h1>Data Solutions: Data Science Quiz</h1>
+        <a class="quiz-btn" href="./game.html">Start</a>
+        <a class="quiz-btn" href="./highscores.html">Quit</a>
+      </div>
+    </div>
+
+    <script>
+      // Ensure the spinner is removed after content loads
+      document.addEventListener('DOMContentLoaded', function () {
+        const spinner = document.getElementById('spinner');
+        if (spinner) {
+          spinner.style.display = 'none';
+        }
+      });
+
+      // Add smooth scrolling to all links
+      document.querySelectorAll('a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          const href = this.getAttribute('href');
+          if (href.startsWith('#')) {
+            e.preventDefault();
+            document.querySelector(href).scrollIntoView({
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    </script>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../lib/wow/wow.min.js"></script>
+    <script src="../../../lib/easing/easing.min.js"></script>
+    <script src="../../../lib/waypoints/waypoints.min.js"></script>
+    <script src="../../../lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../../../js/main.js"></script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Data Science Quiz</title>
+    <link rel="stylesheet" href="./app.css" />
+    <link rel="stylesheet" href="./game.css" />
+    <link rel="icon" type="image/jpg" href="./assets/play.jpg">
+  </head>
+  <body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+      <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+      <a href="../../index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <p class="m-0 fw-bold" style="font-size: 25px;">
+          <img src="./assets/play.jpg" alt="" height="50px">
+          Graduate<span style="color: #9b0368;">Portal</span>
+        </p>
+      </a>
+      <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+          <a href="../../index.html" class="nav-item nav-link active">Home</a>
+          <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Data Solutions</a>
+            <div class="dropdown-menu fade-down m-0">
+              <a href="datascience.html" class="dropdown-item">Data Science</a>
+              <a href="Analytics.html" class="dropdown-item">Data Analytics</a>
+              <a href="Architecture.html" class="dropdown-item">Data Architecture & Engineering</a>
+            </div>
+          </div>
+          <a href="../../services.html" class="nav-item nav-link">Service Offerings</a>
+          <a href="#" class="nav-item nav-link">Resources</a>
+          <a href="#" class="nav-item nav-link">FAQ</a>
+          <a href="#" class="nav-item nav-link"><i class="fa fa-user"></i></a>
+          <a href="#" class="nav-item nav-link">
+            <div id="google_translate_element"></div>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <div class="container">
+      <div id="quiz-home" class="justify-center flex-column">
+        <h1>Data Solutions: Data Science Quiz</h1>
+        <a class="quiz-btn" href="./game.html">Start</a>
+        <a class="quiz-btn" href="./highscores.html">Quit</a>
+      </div>
+    </div>
+
+    <script>
+      // Ensure the spinner is removed after content loads
+      document.addEventListener('DOMContentLoaded', function () {
+        const spinner = document.getElementById('spinner');
+        if (spinner) {
+          spinner.style.display = 'none';
+        }
+      });
+
+      // Add smooth scrolling to all links
+      document.querySelectorAll('a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          const href = this.getAttribute('href');
+          if (href.startsWith('#')) {
+            e.preventDefault();
+            document.querySelector(href).scrollIntoView({
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    </script>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../lib/wow/wow.min.js"></script>
+    <script src="../../../lib/easing/easing.min.js"></script>
+    <script src="../../../lib/waypoints/waypoints.min.js"></script>
+    <script src="../../../lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../../../js/main.js"></script>
   </body>
 </html>
