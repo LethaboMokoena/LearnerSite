@@ -13,30 +13,52 @@ let availableQuesions = [];
 
 let questions = [
     {
-        question: "Example question 1?",
-        choice1: "Ans 1",
-        choice2: "Ans 2",
-        choice3: "Ans 3",
-        choice4: "Ans  4",
-        answer: 3,
+        question:"What is data analytics??",
+        choice1: "The process of storing large amounts of data",
+        choice2: "The process of examining data sets to draw conclusions",
+        choice3: "The process of creating data models",
+        choice4: "The process of visualizing data",
+        answer: 2,
     },
+
     {
-        question: "Who wrote 'To Kill a Mockingbird'?",
-        choice1: "Harper Lee",
-        choice2: "Mark Twain",
-        choice3: "Ernest Hemingway",
-        choice4: "F. Scott Fitzgerald",
+        question:"Name the four types of data analytics.?",
+        choice1: "Descriptive, diagnostic, predictive, and prescriptive",
+        choice2: "Descriptive, historical, future, and operational",
+        choice3: "Diagnostic, operational, strategic, and predictive",
+        choice4: "Prescriptive, descriptive, forecasting, and diagnostic",
         answer: 1,
     },
+
     {
-        question: "What is the smallest planet in our solar system?",
-        choice1: "Mars",
-        choice2: "Earth",
-        choice3: "Venus",
-        choice4: "Mercury",
-        answer: 4,
+        question:"What is a data warehouse??",
+        choice1: "A storage system for raw, unprocessed data",
+        choice2: "A central repository for integrated data from multiple sources",
+        choice3: "A database for transactional data processing",
+        choice4: "A tool for data visualization",
+        answer: 2,
+    },
+
+    {
+        question:"What is the difference between structured and unstructured data??",
+        choice1: "Structured data is only numerical, unstructured data is textual",
+        choice2: "Structured data is organized in rows and columns, unstructured data is not",
+        choice3: "Structured data cannot be queried, unstructured data can",
+        choice4: "Structured data is always accurate, unstructured data is not",
+        answer: 2,
+    },
+
+    {
+        question:"What is data cleaning??",
+        choice1: "The process of deleting outdated data",
+        choice2: "The process of identifying and correcting errors in data",
+        choice3: "The process of organizing data into tables",
+        choice4: "The process of storing data securely",
+        answer: 2,
     },
     // Add more questions as needed
+
+
 ];
 
 //CONSTANTS
