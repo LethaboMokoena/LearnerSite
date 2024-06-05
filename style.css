@@ -628,4 +628,20 @@ main {
     opacity: 1;
   }
 
+  @media (min-width: 992px) { /* For large screens */
+    .col-lg-6 {
+        flex: 0 0 48%;
+        max-width: 48%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 991.98px) { /* For medium screens */
+    .col-md-6 {
+        flex: 0 0 48%;
+        max-width: 48%;
+        margin-bottom: 20px;
+    }
+}
+
   

@@ -1,0 +1,11 @@
+[
+    {
+        "question" : "What does the acronym "CIA" stand for in information security?",
+        "choice1" : "Central Intelligence Agency",
+        "choice2" : "Confidentiality, Integrity, Availability",
+        "choice3" : "Cyber Intelligence Agency",
+        "choice4" : "Control, Inspect, Authorize",
+        "answer" : 1
+
+    },
+    

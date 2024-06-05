@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Congratulations!</title>
+    <link rel="stylesheet" href="./app.css" />
+    <link rel="icon" type="image/jpg" href="../img/Images/logo_m_10.png">
+    <style>
+        #congratsMessage {
+            font-size: 5.4rem;
+            color: #56a5eb; /* You can choose a specific shade of blue if needed */
+            text-align: center;
+            animation: pulse 2s infinite;
+            position: relative;
+            top: -20px; /* Adjust the value to push the text up */
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="end" class="flex-center flex-column">
+        <h1 id="finalScore"></h1>
+        <div id="congratsMessage"></div>
+        <a class="btn" href="./game.html">Try Again</a>
+        <a class="btn" href="../../security.html">Go Home</a>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <script src="./end.js"></script>
+  </body>
+</html>
