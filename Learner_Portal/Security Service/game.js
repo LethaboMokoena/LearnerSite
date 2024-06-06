@@ -27,7 +27,7 @@ let questions = [
         choice2: "To prevent unauthorized access to or from a private network",
         choice3: "To scan for malware",
         choice4: "To manage network addresses",
-        answer: 1,
+        answer: 2,
     },
 
     {
@@ -36,7 +36,7 @@ let questions = [
         choice2: "AES",
         choice3: "SHA-256",
         choice4: "DES",
-        answer: 2,
+        answer: 3,
     },
 
     {

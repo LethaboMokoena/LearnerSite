@@ -13,7 +13,7 @@ let availableQuesions = [];
 
 let questions = [
     {
-        question:"What is data analytics??",
+        question:"What is data analytics?",
         choice1: "The process of storing large amounts of data",
         choice2: "The process of examining data sets to draw conclusions",
         choice3: "The process of creating data models",
@@ -31,7 +31,7 @@ let questions = [
     },
 
     {
-        question:"What is a data warehouse??",
+        question:"What is a data warehouse?",
         choice1: "A storage system for raw, unprocessed data",
         choice2: "A central repository for integrated data from multiple sources",
         choice3: "A database for transactional data processing",
@@ -40,7 +40,7 @@ let questions = [
     },
 
     {
-        question:"What is the difference between structured and unstructured data??",
+        question:"What is the difference between structured and unstructured data?",
         choice1: "Structured data is only numerical, unstructured data is textual",
         choice2: "Structured data is organized in rows and columns, unstructured data is not",
         choice3: "Structured data cannot be queried, unstructured data can",
@@ -49,7 +49,7 @@ let questions = [
     },
 
     {
-        question:"What is data cleaning??",
+        question:"What is data cleaning?",
         choice1: "The process of deleting outdated data",
         choice2: "The process of identifying and correcting errors in data",
         choice3: "The process of organizing data into tables",
